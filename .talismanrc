@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: devsecops-k8s-demo-main/Jenkinsfile
+  checksum: 3c6371eac9deaff2f55be838bdfe9bcf4d78ad10336e98c944ad0237afee6a3a
+
