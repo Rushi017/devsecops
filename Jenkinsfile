@@ -18,7 +18,7 @@ imageName = "nava9594/$JOB_NAME:v1.$BUILD_ID"
         }
         stage('build the code'){
             steps{
-                sh 'mvn clean package'
+                sh 'mvn clean install'
             }
         }
         stage('Mutation Tests - PIT') {
