@@ -12,7 +12,7 @@ imageName = "nava9594/$JOB_NAME:v1.$BUILD_ID"
     stages{
         stage('checkout the code'){
             steps{
-                slackSend channel: 'hello-world', message: 'job started'
+                slackSend channel: 'jenkins-notification', message: 'job started'
                 git url:'https://github.com/Rushi017/devsecops', branch: 'main'
             }
         }
