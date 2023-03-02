@@ -74,11 +74,11 @@ docker image rmi $JOB_NAME:v1.$BUILD_ID nava9594/$JOB_NAME:v1.$BUILD_ID nava9594
         }
         success{
             echo "========pipeline executed successfully ========"
-            slackSend channel: 'hello-world', message: ' job success'
+            slackSend channel: 'jenkins-notification', message: ' job success'
         }
         failure{
             echo "========pipeline execution failed========"
-            slackSend channel: 'hello-world', message: ' job failed'
+            slackSend channel: 'jenkins-notification', message: ' job failed'
         }
         }
     }
